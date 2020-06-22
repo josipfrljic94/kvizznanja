@@ -1,0 +1,92 @@
+ *{
+     margin: 0;
+     padding: 0;
+     
+ }
+ body{
+     height: 100vh;
+    background: url(image/screen.jpg) center no-repeat;
+    object-fit: cover;
+ }
+
+ .container{
+     height: 80vh;
+     width:95%;
+  
+     position:fixed;
+     top: 10vh;
+    left: 2.5%;
+    animation-name: example;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+ }
+ .btn-back{
+     border: 0;
+     box-shadow: 0 0 1px 2px #052a53;
+     color: #fff;
+     background-color: #073569;
+     text-transform: uppercase;
+     font-size: 1.2rem;
+     padding: 3px;
+    cursor: pointer;
+ }
+ @keyframes example {
+    from {top: -100vh;}
+    to {top: 10vh; }
+  }
+ 
+ .container .q-screen{
+    background:linear-gradient(#021b38, #0b1853,#021b38);
+     height: 65%;
+     color: #fff;
+     display: grid;
+     align-content: center;
+     justify-content: center;
+     text-align: center;
+     
+    
+ }
+ 
+ .container .a-screen{
+     background: linear-gradient(#073569,#082c55);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     justify-content: space-around;
+     align-items: center;
+     height: 35%;
+     color: #ffffff;
+
+ }
+ .container .a-screen .answer{
+     box-shadow: 0 0 1px 1px #021b38 ;
+     width: 95%;
+     text-align: center;
+     padding: 3px;
+     background: linear-gradient(#093f7c,#0b3a70);
+     cursor: pointer;
+ }
+ .container .a-screen .answer:hover{
+    box-shadow: 0 0 1px 1px #fff;
+ }
+
+ /* ANIMATION */
+ #slide {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+   
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
